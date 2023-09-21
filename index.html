@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
+            integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-right">
+                    <p class="texth"><b>Welcome to</b>
+                    <br><br>student portal</p>
+                    <p class="ad3">Login to access your account</p>
+                    <img src="images.png" alt="IMAGE" height="290px" width="350px">
+
+                
+                </div>
+            </div>
+        </div>
+        
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Login</h1>
+                <br>
+                <span>Enter your account details</span>
+                <br>
+                <input type="username" placeholder="Username" />
+                <input type="password" placeholder="Password" id="myInput"/>
+                <span onclick="myFunction()"><i id="toggler"class="far fa-eye"></i></span>
+                <!-- <input type="checkbox" >Show Password -->
+                <a href="#">Forgot password?</a>
+                <br>
+                <button class="loginbutton">Login</button>
+                <div class="signupside">
+                <p class="lablep">Don't have an account? </p> 
+                <button class="signupbutton">Sign up</button>
+                </div>
+
+            </form>
+           
+
+        </div>
+        
+    </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myInput");
+          if (x.type === "password") {
+            x.type = "text";
+          } else {
+            x.type = "password";
+          }
+        }
+        </script>
+
+</body>
+</html>
